@@ -1,6 +1,8 @@
 #!/bin/sh
 # file: git-authors.sh:
-
+# @auth: Sprax Lines
+# @date: 2019.10.04
+#
 # Count all source lines of code (SLOCS) in files under the current directory
 # that match the (default) code_pattern,
 # attribute each one (including blanks) to an author,

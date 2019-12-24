@@ -1,6 +1,7 @@
 #!/bin/sh
 # @file: git-slocs.sh
 # @auth: Sprax Lines
+# @date: 2019.12.23
 #
 # Count all source lines of code (SLOCS) under the current directory,
 # attribute each one (including blanks) to an author, group them,
