@@ -9,5 +9,4 @@ if [[ $# -gt 1 ]] ; then
   exit 0
 fi
 
-git ls-tree -r -z --name-only HEAD -- $code_pattern|xargs -0 -n1 git blame --line-porcelain|grep  "^author "|sort|uniq -c|sort -nr
-
+git ls-tree -r -z --name-only HEAD -- $code_pattern|xargs -0 -n1 git blame --line-porcelain|grep  "^author "|cut -d' ' -f 2-|sort|uniq -c|sort -nr
