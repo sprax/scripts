@@ -11,7 +11,7 @@
 default_code='*.cc *.h *.md *.sh *.txt *.yaml */*.cc */*.h */*.hpp */*.md */*.py */*.sh */*.yml .*/*.yml .circleci/*/*/Dockerfile */*.txt */*/*.cc */*/*.h'
 code_pattern=${1:-$default_code}
 
-if [[ $# -gt 1 ]] ; then
+if [ $# -gt 1 ]; then
   echo "Usage: git-slocs.sh code-glob-pattern"
   exit 0
 fi

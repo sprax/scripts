@@ -3,7 +3,7 @@
 
 if [[ $# -ne 2 ]] ; then
   echo 'Usage:   git-dated-commit.sh date message'
-  echo 'Example: git-dated-commit.sh 2019-10-11T12:34:56 "fixed and dated merge"'
+  echo 'Example: git-dated-commit.sh 2020-01-18T12:34:56 "fixed and dated merge"'
   exit 0
 fi
 
