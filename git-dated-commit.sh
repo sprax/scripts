@@ -1,10 +1,14 @@
 #!/bin/sh
-# file: git-com-date.sh
+# file: git-dated-commit.sh
+message=${1:-'"fixed and dated merge"'}
 
-if [[ $# -ne 2 ]] ; then
-  echo 'Usage:   git-dated-commit.sh date message'
-  echo 'Example: git-dated-commit.sh 2020-01-26T12:34:56 "fixed and dated merge"'
+def_date=2020-02-03T04:05:06
+date_str=${2:-$def_date}
+
+if [[ $# -lt 1 ]] ; then
+  echo "Usage: git-dated-commit.sh message date"
+  echo "Example: $0 $message $date_str"
   exit 0
 fi
 
-GIT_AUTHOR_DATE=$1 GIT_COMMITTER_DATE=$1 git commit -m "$2"
+GIT_AUTHOR_DATE=$date_str GIT_COMMITTER_DATE=$date_str git commit -m "$message"
