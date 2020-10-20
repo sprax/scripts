@@ -1,5 +1,6 @@
 #!/bin/sh
 # file: chr_len_v_byte_len.sh
+# expected output: Généralités has 11 chars, 14 bytes: ($'G\303\251n\303\251ralit\303\251s').
 myvar='Généralités'
 chrlen=${#myvar}
 oLang=$LANG oLcAll=$LC_ALL
