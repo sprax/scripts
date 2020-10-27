@@ -2,7 +2,7 @@
 # file: git-dated-commit.sh
 message=${1:-'"fixed and dated merge"'}
 
-def_date=2020-05-13T12:34:56
+def_date=2020-06-18T06:54:32
 date_str=${2:-$def_date}
 
 if [[ $# -lt 1 ]] ; then
