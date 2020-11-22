@@ -26,7 +26,7 @@ elif [[ $# -gt 2 ]] ; then
   fi
   date_str=`date -j -v+${mins_str}M -f "%Y-%m-%dT%H:%M:%S" $def_date "+%Y-%m-%dT%H:%M:%S"`
   # echo "The revised date string ($date_str) is ${#date_str} chars."
-  exit 0
+  # exit 0
 fi
 
 GIT_AUTHOR_DATE=$date_str GIT_COMMITTER_DATE=$date_str git commit -m "$message"
