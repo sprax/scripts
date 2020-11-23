@@ -7,6 +7,8 @@
 #     if (utensil_type.find("tongs") != string::npos) { // FIXME @user1, @user2 dumb hack
 # But only the first author-tag is counted; in these examples: user1 and user2
 # Btw, if you run this script on itself, it *might* count the above examples.
+#
+# Written for bash; seems to work in zsh and others.
 
 debt_regex=${1:-"(FIXME|TODO):?\\s+"}           # technical-debt marker up to the @-sign.
 name_regex=${2:-"(@\\w+)"}                      # author tag-name: begins with @, ends with WS/punctuation
