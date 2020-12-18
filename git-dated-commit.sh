@@ -2,7 +2,7 @@
 # file: git-dated-commit.sh
 message=${1:-'"fixed and dated merge"'}
 
-def_date=2020-11-04T05:43:21
+def_date=2020-11-26T05:43:21
 date_str=${2:-$def_date}
 
 def_mins=5
