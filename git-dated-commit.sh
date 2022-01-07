@@ -1,5 +1,8 @@
 #!/bin/sh
-# file: git-dated-commit.sh
+# @file: git-dated-commit.sh
+# @auth: Sprax Lines
+# @date: 2019-12-24 17:42:09 Tue 24 Dec
+
 message=${1:-'"fixed and dated merge"'}
 
 def_date=2020-11-25T06:54:32
